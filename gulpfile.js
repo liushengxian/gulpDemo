@@ -7,11 +7,14 @@ var rename = require("gulp-rename");
 var minifycss = require("gulp-clean-css");
 var uglify = require("gulp-uglify");
 var connect = require("gulp-connect");
+var babel = require("gulp-babel");
 
 var htmlPath = 'src/html/*.html';
 var lessPath = 'src/less/*.less';
-var jsPath = 'src/js/*.js';
+var jsPath = 'src/js/*';
 var imgPath = 'src/assets/**.*';
+
+var testPort = 8081;
 
 
 gulp.task("clean", function() {
@@ -45,6 +48,9 @@ gulp.task("img", function() {
 gulp.task("js", function() {
   return gulp
     .src(jsPath)
+    .pipe(babel({
+      presets: ['env']
+    }))
     .pipe(uglify())
     .pipe(rename(function(path){
         path.basename += ".min";
@@ -55,7 +61,8 @@ gulp.task("js", function() {
 gulp.task("connect",function(){
     connect.server({
         root:'dist',
-        livereload: true
+        livereload: true,
+        port: testPort
     });
 })
 

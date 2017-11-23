@@ -1,0 +1,615 @@
+@charset "UTF-8";
+
+time {
+	font-size: 10px
+}
+
+input,input[type=button],input[type=reset],input[type=submit] {
+	-webkit-appearance: none;
+	resize: none
+}
+
+a,article,aside,body,button,dd,details,div,dl,dt,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,img,input,li,menu,nav,ol,p,section,select,table,tbody,td,textarea,th,tr,ul {
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	border: none;
+	outline: none
+}
+
+body {
+	font-size: 14px;
+	font-family: 'Microsoft YaHei','宋体','Arial';
+	font-weight: lighter;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	width: 100%;
+	height: 100%
+}
+
+em,i {
+	font-style: normal
+}
+
+strong {
+	font-weight: 400
+}
+
+.clearfix:after {
+	content: "";
+	display: block;
+	visibility: hidden;
+	height: 0;
+	clear: both
+}
+
+.clearfix {
+	zoom: 1
+}
+
+a {
+	text-decoration: none;
+	color: #969696;
+	font-family: 'Microsoft YaHei','宋体','Arial'
+}
+
+ol,ul {
+	list-style: none
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-size: 100%;
+	font-family: 'Microsoft YaHei'
+}
+
+h2 {
+	font-weight: 400
+}
+
+button {
+	padding: 0;
+	border: 0 none;
+	background: none;
+	cursor: pointer
+}
+
+body,html {
+	width: 100%;
+	height: 100%
+}
+
+.wrap {
+	width: 1920px;
+	height: 1080px;
+	background-image: url(http://zhongla.bi.ipalmap.com/assets/Bg.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	overflow: hidden
+}
+
+.wrap .leftSec {
+	float: left;
+	width: 618px;
+	height: 100%
+}
+
+.wrap .leftSec .sec {
+	width: 100%;
+	height: 365px
+}
+
+.wrap .leftSec .sec.top {
+	height: 350px;	
+	padding-top: 20px;
+	padding-left: 18px;
+}
+
+.leftSec .sec.top .totalNum {
+	background: url('http://zhongla.bi.ipalmap.com/assets/zuoshangjiao.png') no-repeat;
+	height: 140px;
+	width: 600px;
+	background-size: 100% 100%;
+	position: relative;
+	padding-top: 43px;
+}
+
+.leftSec .sec.top .totalNum .title {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	color: #83cff3;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+#totalNumContainer {
+	display: inline-flex;
+	justify-content: center;
+	margin: auto;
+	padding-left: 15px;
+}
+
+#totalNumContainer span {
+	font-size: 72px;
+	width: 60px;
+	height: 80px;
+	color: #fff;
+	text-align: center;	
+	margin-left: 19px;
+}
+
+.leftSec .sec.top .zuoshangjiao2 {
+	width: 600px;
+	height: 140px;
+	background: url('http://zhongla.bi.ipalmap.com/assets/zuoshangjiao2.png');
+	background-size: 100% 100%;
+	margin-top: 40px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 67px;
+}
+
+.leftSec .sec.top .zuoshangjiao2 .item {
+	/* height: 73px; */
+	font-weight: 500;
+	text-align: center;
+}
+
+.leftSec .sec.top .zuoshangjiao2 .title {
+	color: #83cff3;
+	font-size: 20px;
+}
+
+.leftSec .sec.top .zuoshangjiao2 .num {
+	color: #fff;
+	font-size: 32px;
+	margin-top: 20px;
+}
+
+.wrap .leftSec .sec.top .mainInfos ul {
+	width: 100%;
+	height: 100%
+}
+
+.wrap .leftSec .sec.top .mainInfos ul li {
+	width: 100%;
+	height: 25%
+}
+
+.wrap .leftSec .sec.top .mainInfos ul li .title {
+	text-align: right
+}
+
+.wrap .leftSec .sec.top .mainInfos ul li .title p:nth-of-type(2) {
+	margin-top: 10px
+}
+
+.wrap .leftSec .sec.top .mainInfos ul li .datas {
+	padding: 0 35px
+}
+
+.wrap .leftSec .sec.top .mainInfos ul li .datas p {
+	text-align: center;
+	margin-top: 5px;
+	padding-bottom: 3px;
+	color: #cae5ef;
+	font-weight: 500;
+	font-size: 25px;
+	border-bottom: 1px solid #85f1ff;
+	background-clip: content-box
+}
+
+.wrap .leftSec .sec.top .mainInfos ul li .datas #averageStayTime {
+	position: relative;
+	padding-right: 2px
+}
+
+.wrap .leftSec .sec.top .mainInfos ul li .datas #averageStayTime span {
+	position: absolute;
+	top: 10px;
+	left: 64px;
+	font-size: 10px
+}
+
+.wrap .leftSec .sec.top .mainInfos ul li#topTitle {
+	text-align: center;
+	background-image: url(http://zhongla.bi.ipalmap.com/assets/01_label_bg.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-clip: content-box;
+	font-size: 18px;
+	padding: 20px 25px
+}
+
+.wrap .leftSec .sec.top .mainInfos ul li#topTitle div {
+	padding: 14px 0;
+	width: 100%
+}
+
+.wrap .leftSec .sec.middle {
+	position: relative;
+	padding: 40px 0 0
+}
+
+.wrap .leftSec .sec.middle #popularTitle {
+	position: absolute;
+	top: 28px;
+	left: 28px;
+	width: 100%;
+	height: 50px;
+	background-image: url(http://zhongla.bi.ipalmap.com/assets/02_label_bg.png);
+	background-repeat: no-repeat;
+	color: #83cff3;
+	font-size: 16px
+}
+
+.wrap .leftSec .sec.middle #popularTitle span {
+	float: right;
+	margin: 13px 97px;
+	font-weight: 500;
+}
+
+.wrap .leftSec .sec.middle #popular {
+	width: 100%;
+	height: 80%;
+	padding-left: 20px
+}
+
+.wrap .leftSec .sec.middle #timeline {
+	width: 600px;
+	height: 20%;
+	margin: 30px auto
+}
+
+.wrap .leftSec .sec.middle #timeline #baseline {
+	width: 100%;
+	height: 1px;
+	background-color: #152c53;
+	position: relative
+}
+
+.wrap .leftSec .sec.middle #timeline #baseline #overlay {
+	width: 0;
+	height: 2px;
+	background-color: #9da7b7;
+	position: absolute;
+	top: 0;
+	left: 0
+}
+
+.wrap .leftSec .sec.middle #timeline #baseline #dotsBox .dots {
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	float: left;
+	margin-top: -5px;
+	margin-left: 40px;
+	border: 1px solid #666;
+	background-image: url(http://zhongla.bi.ipalmap.com/assets/point_normal.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative
+}
+
+.wrap .leftSec .sec.middle #timeline #baseline #dotsBox .dots time {
+	position: absolute;
+	top: 28px;
+	left: -15px;
+	color: #4172b8;
+	opacity: .5;
+	transition: all .5s linear
+}
+
+.wrap .leftSec .sec.middle #timeline #baseline #dotsBox .dots time.now {
+	color: #f7b2a7;
+	opacity: 1
+}
+
+.wrap .leftSec .sec.middle #timeline #baseline #dotsBox .dots:before {
+	content: "";
+	background-image: url(http://zhongla.bi.ipalmap.com/assets/point_normal.png);
+	background-repeat: no-repeat;
+	width: 28px;
+	height: 28px;
+	background-size: cover;
+	position: absolute;
+	top: -10px;
+	left: -12px;
+	opacity: .5;
+	transition: all .75s linear
+}
+
+.wrap .leftSec .sec.middle #timeline #baseline #dotsBox .dots.now {
+	box-shadow: 0 0 5px px #d2d3d8;
+	background-color: #f7b2a7;
+	opacity: 1
+}
+
+.wrap .leftSec .sec.middle #timeline #baseline #dotsBox .dots.ac:before {
+	content: "";
+	background-image: url(http://zhongla.bi.ipalmap.com/assets/point_actived.png);
+	background-repeat: no-repeat;
+	width: 28px;
+	height: 28px;
+	background-size: cover;
+	position: absolute;
+	opacity: 1;
+	top: -10px;
+	left: -12px
+}
+
+.wrap .leftSec .sec.bottom {
+	position: relative;
+	background-image: url(http://zhongla.bi.ipalmap.com/assets/bg_grid.png);
+	background-position: 21px 120px;
+	background-repeat: no-repeat;
+	background-size: 581px 233px
+}
+
+.wrap .leftSec .sec.bottom #botTitle {
+	height: 50px;
+	width: 100%;
+	position: absolute;
+	top: 40px;
+	left: 15px;
+	color: #83cff3;
+	font-size: 16px;
+	background-image: url(http://zhongla.bi.ipalmap.com/assets/03_label_bg.png);
+	background-repeat: no-repeat
+}
+
+.wrap .leftSec .sec.bottom #botTitle span {
+	position: absolute;
+	top: 13px;
+	left: 60px;
+	font-weight: 500;
+}
+
+.wrap .leftSec .sec.bottom #stayTime {
+	position: absolute;
+	width: 581px;
+	height: 233px;
+	top: 110px;
+	left: 20px
+}
+
+.wrap .rightSec {
+	float: left;
+	width: 1302px;
+	height: 100%
+}
+
+.wrap .rightSec .sec {
+	width: 100%;
+	height: 50%
+}
+
+.wrap .rightSec .sec.top {
+	position: relative;
+	/* background-image: url(assets/04_bg.png); */
+	background-repeat: no-repeat;
+	background-position: 17px 45px;
+	padding-top: 20px;
+}
+
+.wrap .rightSec .sec.top #language {
+	width: 50px;
+	height: 50px;
+	border-radius: 5px;
+	position: absolute;
+	top: 35px;
+	left: 32px;
+	background-color: rgba(32,74,103,.5);
+	color: #fff;
+	font-size: 18px;
+	z-index: 1
+}
+
+.wrap .rightSec .sec.top a#linkOut {
+	position: absolute;
+	top: 35px;
+	left: 106px;
+	z-index: 1
+}
+
+.wrap .rightSec .sec.top a#linkOut img {
+	display: block;
+	width: 50px;
+	height: 50px
+}
+
+.wrap .rightSec .sec.top h3.title {
+	position: absolute;
+	width: 896px;
+	height: 100px;
+	top: 0;
+	right: 0;
+	text-align: right;
+	font-size: 25px;
+	color: #83cff3;
+	z-index:10000;
+    background: linear-gradient(90deg, rgba(35, 45, 65, 0.6) 0%, rgba(11, 20, 36, 0.6) 100%);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.rightSec .sec.top h3.title img {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+}
+
+.rightSec .sec.top h3.title .tip {
+	color:  #fff;
+}
+
+.rightSec .sec.top h3.title .time {
+	position: absolute;
+	top: 22px;
+	right: 27px;
+	white-space: pre-wrap;
+}
+
+.rightSec .bottom {
+	display: flex;
+	background: url('http://zhongla.bi.ipalmap.com/assets/bgrightbottom.png') no-repeat 20px;
+}
+
+.wrap .rightSec .sec.bottom .bgImg {
+	position: relative;
+	width:455px;
+	height: 511px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 20px;
+	margin-left: 20px; 
+	background: url('http://zhongla.bi.ipalmap.com/assets/zhuanquan.png') no-repeat 50% 50%;
+	background-size: 100% 93%;
+}
+
+.wrap .rightSec .sec.bottom .bgImg #userAcc {
+	
+	width: 240px;
+	height: 240px
+}
+
+.wrap .rightSec .sec.bottom .bgImg #userAcc div:nth-of-type(2) {
+	height: 50px;
+	text-align: center;
+	overflow: visible
+}
+
+.wrap .rightSec .sec.bottom .bgImg img {
+	position: absolute;
+	top: 75px;
+	left: 54px;
+	width: 400px;
+	height: 400px;
+}
+
+.rightSec .sec.bottom .bgImg .title {
+	position: absolute;
+	top: 13px;
+	left: 72px;
+	color: #83cff3;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.wrap .rightSec .heat {
+	position: relative;
+	width: 1215px;
+	height: 511px;
+	margin-left: 50px;
+	/* background-image: url(assets/05_bg.png); */
+	background-repeat: no-repeat;
+	background-position: 45px 0
+}
+
+.wrap .rightSec  .heat #heatTitle {
+	color: #83cff3;
+	font-size: 16px;
+	z-index: 10000;
+	font-weight: 500;
+	height: 49px;
+	width: 100%;
+	padding: 15px 0 0 96px;
+	background-image: url(assets/path.png);
+	background-repeat: no-repeat;
+	background-position: 35px 0;
+	position: absolute;
+	top: 0;
+	left: 0
+}
+
+.wrap .rightSec  .heat #heatMap,.wrap .rightSec .sec.bottom .heat #heatMap div canvas {
+	width: 100%;
+	height: 100%
+}
+
+.wrap .rightSec .heat #tuju_logo {
+	position: absolute;
+	bottom: -12px;
+	right: 155px;
+	width: 150px;
+	height: 150px
+}
+
+.rightSec .worldMap {
+	width: 780px;
+	height: 510px;
+	margin-top: 20px;
+	margin-left: 20px;
+}
+
+.rightSec .mapContainer {
+	position: relative;
+}
+
+.rightSec .sec.bottom .title {
+	position: absolute;
+	top: 33px;
+    left: 72px;
+    color: #83cff3;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.wrap .randomStarBox {
+	position: static;
+	width: 0;
+	height: 0
+}
+
+.wrap .star {
+	position: absolute;
+	top: 0;
+	left: 25%;
+	background-image: url(star.png);
+	background-size: cover;
+	width: 30px;
+	height: 30px;
+	transition: all .5s cubic-bezier(.32,1.02,.72,.98);
+	animation: a 3s infinite;
+	-webkit-animation: a 3s infinite
+}
+
+@keyframes a {
+	to {
+		top: 80%;
+		left: 80%
+	}
+}
+
+@-webkit-keyframes a {
+	to {
+		top: 80%;
+		left: 80%
+	}
+}
+
+.wrap .star img {
+	width: 66px;
+	height: 26px
+}
+
+.wrap .starRandom {
+	background-image: url(star.png);
+	background-size: cover;
+	width: 30px;
+	height: 30px
+}
+
+
+
+/* iframe map */
+
+.iframeMap {
+	width: 100%;
+	height: 100%;
+}

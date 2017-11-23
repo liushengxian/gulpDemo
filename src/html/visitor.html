@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.min.css">
+</head>
+<body>
+    <div class=wrap>
+        <div class="leftSec clearfix">
+            <section class="sec top">
+                <div class=totalNum>
+                    <span class="title lang">累计参展客流</span>
+                    <div id=totalNumContainer></div>
+                </div>
+                <div id=zuoshangjiao2 class=zuoshangjiao2>
+                    <div class=item>
+                        <div class="title lang">今日累计人数</div>
+                        <div class=num id=todayTotalNum></div>
+                    </div>
+                    <div class=item>
+                        <div class="title lang">实时人数</div>
+                        <div class=num id=curNum></div>
+                    </div>
+                    <div class=item>
+                        <div class="title lang">平均停留时间</div>
+                        <div class=num id=avgNum></div>
+                    </div>
+                </div>
+            </section>
+            <section class="sec middle">
+                <div id=popularTitle>
+                    <span class=lang>最具人气展岛</span>
+                </div>
+                <div id=popular></div>
+                <div id=timeline>
+                    <div id=baseline>
+                        <div id=overlay></div>
+                        <div id=dotsBox>
+                            <div class=dots>
+                                <time></time>
+                            </div>
+                            <div class=dots>
+                                <time></time>
+                            </div>
+                            <div class=dots>
+                                <time></time>
+                            </div>
+                            <div class=dots>
+                                <time></time>
+                            </div>
+                            <div class=dots>
+                                <time></time>
+                            </div>
+                            <div class=dots>
+                                <time></time>
+                            </div>
+                            <div class=dots>
+                                <time></time>
+                            </div>
+                            <div class=dots>
+                                <time></time>
+                            </div>
+                            <div class=dots>
+                                <time></time>
+                            </div>
+                            <div class=dots>
+                                <time></time>
+                            </div>
+                            <div class=dots>
+                                <time></time>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="sec bottom">
+                <div id=botTitle>
+                    <span class=lang>观展客流趋势图</span>
+                </div>
+                <div id=stayTime></div>
+            </section>
+        </div>
+        <div class=rightSec>
+            <section class="sec top">
+                <button id=language style="display: none">EN</button>
+                <h3 class=title>
+                    <img src=http://zhongla.bi.ipalmap.com/assets/zh_logo.png alt="">
+                    <span class=tip>展会数据分析</span>
+                    <span class=time id=time></span>
+                </h3>
+                <div class=heat>
+                    <div id=heatTitle class=lang>实时位置</div>
+                    <div id=heatMap>
+                        <iframe class=iframeMap src="http://tbi.ipalmap.com:8200/point2188.html?mapId=2188" frameborder=0></iframe>
+                    </div>
+                </div>
+            </section>
+            <section class="sec bottom">
+                <div class=bgImg>
+                    <span class="title lang">观众手机排行</span>
+                    <div id=userAcc></div>
+                    <img src=http://zhongla.bi.ipalmap.com/assets/pie_bg.gif alt="">
+                </div>
+                <div class=mapContainer>
+                    <div class=worldMap id=worldMap></div>
+                    <span class="title lang">参展商来源</span>
+                </div>
+            </section>
+        </div>
+        <div class=randomStarBox></div>
+    </div>
+    <script src="assets/echarts.common.min.js"></script>
+    <script src="assets/jquery-3.2.1.min.js"></script>
+    <script src="js/vendor.min.js"></script>
+    <script src="js/visitor.min.js"></script>
+</body>
+</html>
